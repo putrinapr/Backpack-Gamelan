@@ -2,15 +2,15 @@
 #include <wx/sizer.h>
 #include "Frame.h"
 
-class Title : public wxPanel
+class PlayScreen : public wxPanel
 {
 	wxBitmap image;
 
 public:
-	Title(Frame* parent, wxString file, wxBitmapType format);
-	~Title();
+	PlayScreen(Frame* parent, wxString file, wxBitmapType format);
+	~PlayScreen();
 
-	void OnStartButtonClick(wxCommandEvent& event);
+	void OnPauseButtonClick(wxCommandEvent& event);
 
 	void paintEvent(wxPaintEvent & evt);
 	void paintNow();

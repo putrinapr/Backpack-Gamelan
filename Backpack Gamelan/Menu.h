@@ -10,6 +10,10 @@ public:
 	Menu(Frame* parent, wxString file, wxBitmapType format);
 	~Menu();
 
+	void OnPlayButtonClick(wxCommandEvent& event);
+	void OnFreeButtonClick(wxCommandEvent& event);
+	void OnHistoryButtonClick(wxCommandEvent& event);
+
 	void paintEvent(wxPaintEvent & evt);
 	void paintNow();
 

@@ -2,15 +2,15 @@
 #include <wx/sizer.h>
 #include "Frame.h"
 
-class Title : public wxPanel
+class HistoryScreen : public wxPanel
 {
 	wxBitmap image;
 
 public:
-	Title(Frame* parent, wxString file, wxBitmapType format);
-	~Title();
+	HistoryScreen(Frame* parent, wxString file, wxBitmapType format);
+	~HistoryScreen();
 
-	void OnStartButtonClick(wxCommandEvent& event);
+	void OnBackButtonClick(wxCommandEvent& event);
 
 	void paintEvent(wxPaintEvent & evt);
 	void paintNow();

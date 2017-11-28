@@ -13,13 +13,9 @@ IMPLEMENT_APP(MyApp)
 
 bool MyApp::OnInit()
 {
-	Title* drawPane;
-
 	wxInitAllImageHandlers();
 
 	Frame *frame = new Frame(wxT("Backpack Gamelan"));
-
-	//drawPane = new Title(frame, wxT("TitleScreen.png"), wxBITMAP_TYPE_PNG);
 
 	frame->Show(true);
 

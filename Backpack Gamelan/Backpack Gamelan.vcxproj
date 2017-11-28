@@ -19,14 +19,24 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FreeScreen.h" />
+    <ClInclude Include="HistoryScreen.h" />
     <ClInclude Include="Menu.h" />
+    <ClInclude Include="PauseFreeScreen.h" />
+    <ClInclude Include="PausePlayScreen.h" />
+    <ClInclude Include="PlayScreen.h" />
     <ClInclude Include="Title.h" />
     <ClInclude Include="Frame.h" />
     <ClInclude Include="Main.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="FreeScreen.cpp" />
+    <ClCompile Include="HistoryScreen.cpp" />
     <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="PauseFreeScreen.cpp" />
+    <ClCompile Include="PausePlayScreen.cpp" />
+    <ClCompile Include="PlayScreen.cpp" />
     <ClCompile Include="Title.cpp" />
     <ClCompile Include="Frame.cpp" />
     <ClCompile Include="Main.cpp" />
@@ -35,9 +45,13 @@
     <ResourceCompile Include="Backpack Gamelan.rc" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="Background.png" />
+    <Image Include="Free.png" />
     <Image Include="icon.ico" />
     <Image Include="Loco-Motives.png" />
     <Image Include="Menu.png" />
+    <Image Include="Pause.png" />
+    <Image Include="Play.png" />
     <Image Include="TitleScreen.png" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
