@@ -11,9 +11,15 @@ Menu::Menu(Frame* parent, wxString file, wxBitmapType format) :
 	wxPanel(parent, wxID_ANY), parentFrame(parent)
 {
 	image.LoadFile(file, format);
-	wxButton* playButton = new wxButton(this, 1002, wxT("PLAY"), wxPoint(100, 225), wxDefaultSize);
-	wxButton* freeButton = new wxButton(this, 1003, wxT("FREE"), wxPoint(360, 300), wxDefaultSize);
-	wxButton* historyButton = new wxButton(this, 1004, wxT("HISTORY"), wxPoint(620, 390), wxDefaultSize);
+
+	wxBitmap bitmap1, bitmap2, bitmap3;
+	bitmap1.LoadFile("PlayButton.png", wxBITMAP_TYPE_PNG);
+	bitmap2.LoadFile("FreeButton.png", wxBITMAP_TYPE_PNG);
+	bitmap3.LoadFile("HistoryButton.png", wxBITMAP_TYPE_PNG);
+
+	wxBitmapButton* playButton = new wxBitmapButton(this, 1002, bitmap1, wxPoint(50, 205), wxDefaultSize);
+	wxBitmapButton* freeButton = new wxBitmapButton(this, 1003, bitmap2, wxPoint(313, 280), wxDefaultSize);
+	wxBitmapButton* historyButton = new wxBitmapButton(this, 1004, bitmap3, wxPoint(553, 370), wxDefaultSize);
 }
 
 Menu::~Menu()

@@ -105,5 +105,20 @@
     <Image Include="Background.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="PlayButton.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="ClickToStart.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="PauseButton.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="ResumeButton.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Back.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

@@ -9,7 +9,11 @@ PlayScreen::PlayScreen(Frame* parent, wxString file, wxBitmapType format) :
 	wxPanel(parent, wxID_ANY), parentFrame(parent)
 {
 	image.LoadFile(file, format);
-	wxButton* pauseButton = new wxButton(this, 2001, wxT("PAUSE"), wxPoint(10, 10), wxDefaultSize);
+
+	wxBitmap bitmap;
+	bitmap.LoadFile("PauseButton.png", wxBITMAP_TYPE_PNG);
+
+	wxBitmapButton* pauseButton = new wxBitmapButton(this, 2001, bitmap, wxPoint(10, 10), wxDefaultSize);
 }
 
 PlayScreen::~PlayScreen()

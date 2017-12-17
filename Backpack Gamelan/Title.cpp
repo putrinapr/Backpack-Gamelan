@@ -9,7 +9,11 @@ Title::Title(Frame* parent, wxString file, wxBitmapType format) :
 	wxPanel(parent, wxID_ANY), parentFrame(parent)
 {
 	image.LoadFile(file, format);
-	wxButton* startButton = new wxButton(this, 1001, wxT("Click to start!"), wxPoint(360, 570), wxDefaultSize);
+
+	wxBitmap bitmap;
+	bitmap.LoadFile("ClickToStart.png", wxBITMAP_TYPE_PNG);
+
+	wxBitmapButton* startButton = new wxBitmapButton(this, 1001, bitmap, wxPoint(275, 500), wxDefaultSize);
 }
 
 Title::~Title()

@@ -10,8 +10,13 @@ PausePlayScreen::PausePlayScreen(Frame* parent, wxString file, wxBitmapType form
 	wxPanel(parent, wxID_ANY), parentFrame(parent)
 {
 	image.LoadFile(file, format);
-	wxButton* backButton = new wxButton(this, 5001, wxT("BACK"), wxPoint(350, 250), wxDefaultSize);
-	wxButton* menuButton = new wxButton(this, 5002, wxT("MAIN MENU"), wxPoint(350, 300), wxDefaultSize);
+
+	wxBitmap bitmap1, bitmap2;
+	bitmap1.LoadFile("ResumeButton.png", wxBITMAP_TYPE_PNG);
+	bitmap2.LoadFile("MainMenuButton.png", wxBITMAP_TYPE_PNG);
+
+	wxBitmapButton* pauseButton = new wxBitmapButton(this, 5001, bitmap1, wxPoint(275, 225), wxDefaultSize);
+	wxBitmapButton* menuButton = new wxBitmapButton(this, 5002, bitmap2, wxPoint(225, 325), wxDefaultSize);
 }
 
 PausePlayScreen::~PausePlayScreen()

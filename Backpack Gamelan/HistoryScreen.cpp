@@ -9,7 +9,11 @@ HistoryScreen::HistoryScreen(Frame* parent, wxString file, wxBitmapType format) 
 	wxPanel(parent, wxID_ANY), parentFrame(parent)
 {
 	image.LoadFile(file, format);
-	wxButton* backButton = new wxButton(this, 4001, wxT("BACK"), wxPoint(10, 10), wxDefaultSize);
+
+	wxBitmap bitmap;
+	bitmap.LoadFile("Back.png", wxBITMAP_TYPE_PNG);
+
+	wxBitmapButton* backButton = new wxBitmapButton(this, 4001, bitmap, wxPoint(10, 10), wxDefaultSize);
 }
 
 HistoryScreen::~HistoryScreen()
